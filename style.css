@@ -1,3 +1,9 @@
+body {
+  padding: 1rem;
+
+  margin: 0;
+  background-color: white;
+}
 nav {
   background-color: white;
   display: flex;
@@ -41,13 +47,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  padding: 1rem;
-  background-color: white;
-  margin: 0;
-  background-color: white;
-}
-
 main {
   font-family: Avenir, Roboto, Helvetica, sans-serif;
   font-size: 0.8rem;
@@ -61,6 +60,27 @@ article {
   flex-flow: column;
   padding: 2rem;
   margin: none;
+}
+
+.soldOut {
+  opacity: 50%;
+}
+
+.soldOutBox {
+  position: absolute;
+  background-color: gray;
+  height: 5rem;
+  width: 10rem;
+  font-size: large;
+  display: grid;
+
+  align-items: center;
+  margin: 0;
+}
+
+.soldOutBox p {
+  margin: 0;
+  justify-self: center;
 }
 
 .subtle {
