@@ -169,5 +169,26 @@ ol li {
 
 .brandGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.brandGrid div {
+  padding: 1rem;
+  border-bottom: solid #e6e6e6 2px;
+}
+
+a.brandlink:link {
+  color: #000;
+  text-decoration: none;
+}
+a.brandlink:visited {
+  color: #000;
+  text-decoration: none;
+}
+a.brandlink:hover {
+  font-weight: bold;
+}
+a.brandlink:active {
+  text-decoration: none;
 }
