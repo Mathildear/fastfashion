@@ -22,8 +22,9 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: coral;
-  text-decoration: none;
+  font-weight: bold;
+  border-bottom: black solid 2px;
+  padding-bottom: 1rem;
 }
 a:active {
   text-decoration: none;
@@ -31,6 +32,7 @@ a:active {
 
 nav li {
   list-style: none;
+  padding: 1rem;
 }
 
 *,
@@ -40,7 +42,9 @@ nav li {
 }
 
 #current {
-  color: coral;
+  font-weight: bold;
+  border-bottom: black solid 2px;
+  padding-bottom: 1rem;
 }
 
 img {
