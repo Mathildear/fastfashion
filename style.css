@@ -1,27 +1,97 @@
-body{
-    background-color: white;
-    margin: 0;
-}
-
 nav {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    justify-self: center;
-    
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  align-items: center;
+  height: 4rem;
 }
-
 
 a:link {
-    color: white;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 a:visited {
-    color: white;
+  color: #000;
+  text-decoration: none;
 }
 a:hover {
-    color:coral;
+  color: coral;
+  text-decoration: none;
 }
 a:active {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#current {
+  color: coral;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding: 1rem;
+  background-color: white;
+  margin: 0;
+  background-color: white;
+}
+
+main {
+  font-family: Avenir, Roboto, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  padding: 2rem;
+  margin: none;
+}
+
+.subtle {
+  color: gray;
+}
+
+article .imgcontainer {
+  order: -1;
+  align-self: center;
+}
+
+article p {
+  margin: 0.25rem 1rem 1rem;
+  justify-self: end;
+}
+
+article h1 {
+  margin: 1rem 1rem 0;
+}
+
+article ul {
+  margin: 0 0 1rem;
+}
+
+article button {
+  background: black;
+
+  align-items: center;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: auto;
 }
