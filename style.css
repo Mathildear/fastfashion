@@ -49,10 +49,17 @@ img {
 
 main {
   font-family: Avenir, Roboto, Helvetica, sans-serif;
+}
+
+.productsGrid {
   font-size: 0.8rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.brandChosen {
+  font-size: 2rem;
 }
 
 article {
