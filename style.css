@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    
+}
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color:coral;
+}
+a:active {
+    text-decoration: none;
+}
