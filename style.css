@@ -1,6 +1,6 @@
 body {
   padding: 1rem;
-
+  font-family: Avenir, Roboto, Helvetica, sans-serif;
   margin: 0;
   background-color: white;
 }
@@ -47,10 +47,6 @@ img {
   max-width: 100%;
 }
 
-main {
-  font-family: Avenir, Roboto, Helvetica, sans-serif;
-}
-
 .productsGrid {
   font-size: 0.8rem;
   display: grid;
@@ -59,7 +55,15 @@ main {
 }
 
 .brandChosen {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.price {
+  font-size: 1rem;
+}
+
+.newPrice {
+  font-size: 1rem;
 }
 
 article {
@@ -80,7 +84,6 @@ article {
   width: 10rem;
   font-size: large;
   display: grid;
-
   align-items: center;
   margin: 0;
 }
@@ -88,6 +91,26 @@ article {
 .soldOutBox p {
   margin: 0;
   justify-self: center;
+}
+
+.saleBox {
+  background-color: red;
+  opacity: 70%;
+  padding: 0.5rem;
+  position: absolute;
+  font-size: large;
+  display: grid;
+}
+
+.saleBox p {
+  margin: 0;
+  justify-self: center;
+}
+
+.salePrice {
+  color: red;
+  text-decoration: line-through;
+  margin: 0 0 0 1rem;
 }
 
 .subtle {
