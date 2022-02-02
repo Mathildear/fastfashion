@@ -52,6 +52,9 @@ img {
   order: -2;
   align-self: center;
 }
+.gridnameandprice {
+  margin-top: auto;
+}
 
 .productsGrid {
   font-size: 0.8rem;
