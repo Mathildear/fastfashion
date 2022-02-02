@@ -49,6 +49,8 @@ nav li {
 
 img {
   max-width: 100%;
+  order: -1;
+  align-self: center;
 }
 
 .productsGrid {
@@ -81,21 +83,12 @@ article {
   opacity: 50%;
 }
 
-.soldOutBox {
+.productlist article.soldOut::before {
+  content: "Sold Out";
   position: absolute;
-  background-color: gray;
-  height: 5rem;
-  width: 10rem;
-  font-size: large;
-  display: grid;
-  align-items: center;
-  margin-left: 5rem;
-  margin-top: 10rem;
-}
-
-.soldOutBox p {
-  margin: 0;
-  justify-self: center;
+  background: gray;
+  font-size: 1.3rem;
+  padding: 1rem;
 }
 
 .saleBox {
@@ -120,11 +113,6 @@ article {
 
 .subtle {
   color: gray;
-}
-
-article .imgcontainer {
-  order: -1;
-  align-self: center;
 }
 
 article p {
