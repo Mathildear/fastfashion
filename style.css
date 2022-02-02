@@ -13,20 +13,20 @@ nav {
   height: 4rem;
 }
 
-a:link {
+li a:link {
   color: #000;
   text-decoration: none;
 }
-a:visited {
+li a:visited {
   color: #000;
   text-decoration: none;
 }
-a:hover {
+li a:hover {
   font-weight: bold;
   border-bottom: black solid 2px;
   padding-bottom: 1rem;
 }
-a:active {
+li a:active {
   text-decoration: none;
 }
 
@@ -178,17 +178,17 @@ ol li {
   border-bottom: solid #e6e6e6 2px;
 }
 
-a.brandlink:link {
+section a:link {
   color: #000;
   text-decoration: none;
 }
-a.brandlink:visited {
+section a:visited {
   color: #000;
   text-decoration: none;
 }
-a.brandlink:hover {
+section a:hover {
   font-weight: bold;
 }
-a.brandlink:active {
+section a:active {
   text-decoration: none;
 }
