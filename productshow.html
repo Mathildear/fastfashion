@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <li><a href="categories.html">See Categories</a></li>
-        <li><a href="productlist.html">See Products</a></li>
-        <li><a href="productshow.html">Show Product</a></li>
+      <li><a href="categories.html">See Categories</a></li>
+      <li><a href="productlist.html">See Products</a></li>
+      <li><a id="current" href="productshow.html">Show Product</a></li>
     </nav>
 
-</body>
+    <ol class="breadcrums">
+      <li>Home</li>
+      <li>&gt;</li>
+      <li><a href="categories.html">Brands</a></li>
+      <li>&gt;</li>
+      <li><a href="productlist.html">Nike</a></li>
+      <li>&gt;</li>
+      <li>Sahara Team India Fanwear Round Neck Jersey</li>
+    </ol>
+
+    <div class="gridshowproduct">
+      <img
+        src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+        alt="Sahara Team India Fanwear Round Neck Jersey"
+      />
+      <div class="producttext">
+        <p class="productname">Sahara Team India Fanwear Round Neck Jersey</p>
+        <p>Nike | Tshirt | Menswear</p>
+        <p class="priceproductshow">DKK 895,-</p>
+        <div class="addtobasket">
+          <label>
+            <p>Choose size</p>
+            <select name="size">
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+          <button>ADD TO BASKET</button>
+        </div>
+        <article class="productinfo">
+          <h1>Product information</h1>
+          <p>
+            <span>Model name: </span> Sahara Team India Fanwear Round Neck
+            Jersey
+          </p>
+
+          <p><span>Color: </span> Blue</p>
+          <p><span>Season: </span> Summer</p>
+          <p><span>Type: </span> Sport</p>
+          <p><span>Id number: </span> 1163</p>
+        </article>
+      </div>
+    </div>
+  </body>
 </html>

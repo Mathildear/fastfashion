@@ -52,6 +52,7 @@ img {
   order: -2;
   align-self: center;
 }
+
 .gridnameandprice {
   margin-top: auto;
 }
@@ -132,14 +133,15 @@ article ul {
 }
 
 article button {
-  background: black;
-
   align-items: center;
   border: none;
-  padding: 0.5rem;
-  color: white;
   font-size: 1.2rem;
   margin-top: auto;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 ol {
@@ -164,9 +166,10 @@ ol li {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
-.brandGrid div {
+.brandGrid a {
   padding: 1rem;
   border-bottom: solid #e6e6e6 2px;
+  padding: 1rem;
 }
 
 section a:link {
@@ -179,7 +182,116 @@ section a:visited {
 }
 section a:hover {
   font-weight: bold;
+  background-color: whitesmoke;
+  font-weight: bold;
 }
+
 section a:active {
   text-decoration: none;
+}
+
+.product select {
+  min-width: 100px;
+  background-image: url(http://www.w3.org/2000/svg);
+}
+
+.producttext {
+  padding: 2rem;
+  grid-column: span 2/6;
+}
+
+.productname {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.gridshowproduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.gridshowproduct img {
+  grid-column: span 1/3;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: var(--input-color);
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center right 0.5rem;
+}
+
+label {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.addtobasket {
+  background-color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.addtobasket button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.breadcrums li {
+  font-size: 1rem;
+}
+
+.breadcrums a:hover {
+  border-bottom: none;
+}
+
+article span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.productinfo p {
+  margin: 0.25rem 0rem 1rem;
+}
+
+article h2 {
+  font-size: 1rem;
+}
+
+article h1 {
+  margin: 1rem;
+}
+
+.gridshowproduct img {
+  grid-column: span 3/4;
+}
+
+.priceproductshow {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  .gridshowproduct {
+    display: flex;
+    flex-direction: column;
+  }
 }
