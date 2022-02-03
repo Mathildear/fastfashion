@@ -15,6 +15,7 @@ nav {
 
 .logo {
   max-width: 5%;
+  margin-left: 50%;
 }
 
 nav li a:hover {
@@ -301,6 +302,53 @@ article h1 {
 .priceproductshow {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+/* For the burger menu  */
+
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .togglebuttonflex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    z-index: 2;
+    background-color: white;
+    height: 200%;
+  }
+
+  .logo img {
+    min-width: 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
 }
 
 @media (max-width: 850px) {
