@@ -17,6 +17,16 @@ nav {
   max-width: 5%;
 }
 
+nav li a:hover {
+  list-style: none;
+}
+
+nav li:hover {
+  font-weight: bold;
+  border-bottom: black solid 2px;
+  padding-bottom: 1rem;
+}
+
 li a:link {
   color: #000;
   text-decoration: none;
