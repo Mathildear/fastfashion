@@ -32,28 +32,34 @@
     <main class="deals">
       <h1 class="brandChosen">Nike</h1>
       <div class="productsGrid">
-        <article class="smallProduct">
-          <div class="gridnameandprice">
-            <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <div class="gridnameandprice">
+              <div class="percentageDiscount">
+                <p>34%</p>
+              </div>
+              <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
 
-            <p class="price">DKK 895,-</p>
+              <p class="price">DKK 895,-</p>
+              <p class="newPrice">DKK 1621,75</p>
 
-            <p class="subtle">Nike | Tshirt</p>
-          </div>
+              <p class="subtle">Nike | Tshirt</p>
+            </div>
 
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-            alt="Sahara Team India Fanwear Round Neck Jersey"
-          />
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Sahara Team India Fanwear Round Neck Jersey"
+            />
 
-          <button>BUY NOW</button>
-        </article>
-
-        <article class="smallProduct soldOut">
+            <button>BUY NOW</button>
+          </article>
+        </template>
+        <!-- <article class="smallProduct soldOut">
           <div class="gridnameandprice">
             <h1>Blue T20 Indian Cricket Jersey</h1>
 
             <p class="price">DKK 1595,-</p>
+            <p class="newPrice">DKK 1621,75</p>
 
             <p class="subtle">Nike | Tshirt</p>
           </div>
@@ -69,7 +75,8 @@
           <div class="gridnameandprice">
             <h1>Mean Team India Cricket Jersey</h1>
 
-            <p class="price discounted">DKK 2495,-</p>
+            <p class="price">DKK 2495,-</p>
+
             <p class="newPrice">DKK 1621,75</p>
 
             <p class="subtle">Nike | Tshirt</p>
@@ -90,7 +97,7 @@
           <div class="gridnameandprice">
             <h1>Deck Navy Blue Backpack</h1>
 
-            <p class="price discounted">DKK 1299,-</p>
+            <p class="price">DKK 1299,-</p>
             <p class="newPrice">DKK 584,55</p>
 
             <p class="subtle">Puma | Bagpacks</p>
@@ -111,6 +118,7 @@
             <h1>Big Cat Backpack Black</h1>
 
             <p class="price">DKK 1299,-</p>
+            <p class="newPrice">DKK 1621,75</p>
 
             <p class="subtle">Puma | Bagpacks</p>
           </div>
@@ -121,9 +129,10 @@
           />
 
           <button>BUY NOW</button>
-        </article>
+        </article> -->
       </div>
     </main>
-    <script src="shop.js"></script>
+    <script src="burgermenu.js"></script>
+    <script src="productlist.js"></script>
   </body>
 </html>

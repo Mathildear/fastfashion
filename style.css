@@ -92,10 +92,6 @@ img {
   font-size: 1rem;
 }
 
-.newPrice {
-  font-size: 1rem;
-}
-
 article {
   display: flex;
   flex-flow: column;
@@ -103,7 +99,7 @@ article {
   margin: none;
 }
 
-.soldOut {
+.productlist article.soldOut {
   opacity: 50%;
 }
 
@@ -115,7 +111,10 @@ article {
   padding: 1rem;
 }
 
-.saleBox {
+/* HELP it wont show the salebox */
+
+/* .saleBox {
+  content: "";
   background-color: red;
   opacity: 70%;
   padding: 0.5rem;
@@ -125,14 +124,42 @@ article {
 }
 
 .saleBox p {
+  content: "";
   margin: 0;
   justify-self: center;
+} */
+
+.productlist article.sale .percentageDiscount {
+  background-color: red;
+  opacity: 70%;
+  padding: 0.5rem;
+  order: -1;
+  font-size: large;
+  display: grid;
+}
+
+.productlist article .percentageDiscount {
+  display: none;
+}
+
+.percentageDiscount p {
+  margin: 0;
+  justify-self: center;
+}
+
+.productlist article .newPrice {
+  display: none;
+}
+
+.productlist article.sale .newPrice {
+  display: initial;
+  font-size: 1rem;
 }
 
 .discounted {
   color: red;
   text-decoration: line-through;
-  margin: 0 0 0 1rem;
+  margin: 0;
 }
 
 .subtle {
@@ -174,6 +201,10 @@ ol li {
   list-style: none;
   padding: 3% 1% 3% 1%;
   font-size: 1.2rem;
+}
+
+p.price .discounted {
+  margin: 0 0 0 1rem;
 }
 
 .letter {
