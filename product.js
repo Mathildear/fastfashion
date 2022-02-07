@@ -17,6 +17,12 @@ function showProduct(product) {
   document.querySelector("img.productimage").alt = "product.productdisplayname";
   document.querySelector(".producttext .productname").textContent =
     product.productdisplayname;
+  document.querySelector(".onelineinfo").textContent =
+    product.brandname + " | " + product.articletype + " | " + product.gender;
   document.querySelector(".producttext .priceproductshow").textContent =
     "DKK " + product.price + ",-";
+  document.querySelector(".modelname").textContent = product.productdisplayname;
+  document.querySelector(".season").textContent = product.season;
+  document.querySelector(".type").textContent = product.usagetype;
+  document.querySelector(".idnumber").textContent = product.id;
 }
