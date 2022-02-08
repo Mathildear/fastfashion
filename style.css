@@ -111,24 +111,6 @@ article {
   padding: 1rem;
 }
 
-/* HELP it wont show the salebox */
-
-/* .saleBox {
-  content: "";
-  background-color: red;
-  opacity: 70%;
-  padding: 0.5rem;
-  order: -1;
-  font-size: large;
-  display: grid;
-}
-
-.saleBox p {
-  content: "";
-  margin: 0;
-  justify-self: center;
-} */
-
 .productlist article.sale .percentageDiscount {
   background-color: red;
   opacity: 70%;
@@ -179,8 +161,7 @@ article ul {
   margin: 0 0 1rem;
 }
 
-article button {
-  align-items: center;
+article a {
   border: none;
   font-size: 1.2rem;
   margin-top: auto;
@@ -189,6 +170,12 @@ article button {
   border: none;
   padding: 1rem;
   border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+article.soldOut a {
+  pointer-events: none;
 }
 
 ol {
@@ -297,13 +284,14 @@ label p {
   flex-direction: column;
 }
 
-.addtobasket button {
+.addtobasket a {
   background-color: black;
   color: white;
   border: none;
   padding: 1rem;
   border-radius: 10px;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .breadcrums li {

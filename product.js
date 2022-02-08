@@ -1,4 +1,6 @@
-const url = "https://kea-alt-del.dk/t7/api/products/1525";
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+const url = "https://kea-alt-del.dk/t7/api/products/" + id;
 // fetch data
 
 // populate the page
@@ -8,7 +10,7 @@ fetch(url)
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".breadcrums .brand").textContent = product.brandname;
+  document.querySelector(".brand a").textContent = product.brandname;
   document.querySelector(".breadcrums .productname").textContent =
     product.productdisplayname;
   document.querySelector(
@@ -24,5 +26,6 @@ function showProduct(product) {
   document.querySelector(".modelname").textContent = product.productdisplayname;
   document.querySelector(".season").textContent = product.season;
   document.querySelector(".type").textContent = product.usagetype;
+  document.querySelector(".prodyear").textContent = product.productionyear;
   document.querySelector(".idnumber").textContent = product.id;
 }
