@@ -5,6 +5,9 @@ const brandname = urlParams.get("brand");
 const url =
   "https://kea-alt-del.dk/t7/api/products?limit=12&brandname=" + brandname;
 
+document.querySelector(".breadcrums li:last-child").textContent = brandname;
+document.querySelector(".brandChosen").textContent = brandname;
+
 fetch(url)
   .then(function (res) {
     return res.json();

@@ -11,6 +11,7 @@ fetch(url)
 function showProduct(product) {
   console.log(product);
   document.querySelector(".brand a").textContent = product.brandname;
+  document.querySelector(".brand a").href += "?brand=" + product.brandname;
   document.querySelector(".breadcrums .productname").textContent =
     product.productdisplayname;
   document.querySelector(
